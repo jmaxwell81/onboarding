@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Requests" max_length="40" name="x_shir_onboarding_requests" type="collection">
+        <element label="bu" max_length="15" name="bu" type="string"/>
+        <element label="contract" max_length="1" name="contract" type="string"/>
+        <element label="department" max_length="50" name="department" type="string"/>
+        <element label="Email distribution list" max_length="4000" name="email_distribution_list" type="string"/>
+        <element label="End date" max_length="15" name="end_date" type="string"/>
+        <element label="First name" max_length="50" name="first_name" type="string"/>
+        <element label="Hiring manager email" max_length="100" name="hiring_manager_email" type="string"/>
+        <element label="Hiring manager name" max_length="100" name="hiring_manager_name" type="string"/>
+        <element label="Hiring manager user name" max_length="40" name="hiring_manager_user_name" type="string"/>
+        <element label="HR notes" max_length="4000" name="hr_notes" type="string"/>
+        <element label="Last name" max_length="50" name="last_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Start date" max_length="15" name="start_date" type="string"/>
+        <element label="Status" max_length="15" name="status" type="string"/>
+        <element label="title" max_length="30" name="title" type="string"/>
+    </element>
+</database>

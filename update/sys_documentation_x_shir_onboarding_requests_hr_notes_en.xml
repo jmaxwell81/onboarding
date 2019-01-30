@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="hr_notes" label="HR notes" language="en" table="x_shir_onboarding_requests">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hr_notes</element>
+            <help/>
+            <hint/>
+            <label>HR notes</label>
+            <language>en</language>
+            <name>x_shir_onboarding_requests</name>
+            <plural>HR notes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>NMan</sys_created_by>
+            <sys_created_on>2019-01-30 18:31:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>840a8dc6dbdbaf00ba4538ff9d96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HR notes</sys_name>
+            <sys_package display_value="Onboarding Management System" source="x_shir_onboarding">4505d04edb1baf00ba4538ff9d9619b2</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Onboarding Management System">4505d04edb1baf00ba4538ff9d9619b2</sys_scope>
+            <sys_update_name>sys_documentation_x_shir_onboarding_requests_hr_notes_en</sys_update_name>
+            <sys_updated_by>NMan</sys_updated_by>
+            <sys_updated_on>2019-01-30 18:31:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
