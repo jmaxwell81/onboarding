@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="HR Users" max_length="40" name="x_shir_onboarding_hr_users" type="collection">
+        <element label="email" max_length="100" name="email" type="string"/>
+        <element label="First name" max_length="50" name="first_name" type="string"/>
+        <element label="Last name" max_length="50" name="last_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="User name" max_length="40" name="user_name" type="string"/>
+    </element>
+</database>
