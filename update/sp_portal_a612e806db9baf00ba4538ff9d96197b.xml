@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="onboarding">ccf1accedb5baf00ba4538ff9d961905</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>NMan</sys_created_by>
+        <sys_created_on>2019-01-30 15:38:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a612e806db9baf00ba4538ff9d96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onboarding</sys_name>
+        <sys_package display_value="Onboarding Management System" source="x_shir_onboarding">4505d04edb1baf00ba4538ff9d9619b2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Onboarding Management System">4505d04edb1baf00ba4538ff9d9619b2</sys_scope>
+        <sys_update_name>sp_portal_a612e806db9baf00ba4538ff9d96197b</sys_update_name>
+        <sys_updated_by>NMan</sys_updated_by>
+        <sys_updated_on>2019-01-30 15:38:14</sys_updated_on>
+        <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
+        <title>onboarding</title>
+        <url_suffix>onboarding</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=a612e806db9baf00ba4538ff9d96197b"/>
+</record_update>
