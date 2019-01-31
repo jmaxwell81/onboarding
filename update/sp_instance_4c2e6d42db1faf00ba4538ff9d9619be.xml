@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">f01e650adb1faf00ba4538ff9d961913</sp_column>
+        <sp_widget display_value="onboarding">b24eb04edb9baf00ba4538ff9d961999</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>NMan</sys_created_by>
+        <sys_created_on>2019-01-30 21:09:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4c2e6d42db1faf00ba4538ff9d9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Onboarding Management System" source="x_shir_onboarding">4505d04edb1baf00ba4538ff9d9619b2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Onboarding Management System">4505d04edb1baf00ba4538ff9d9619b2</sys_scope>
+        <sys_update_name>sp_instance_4c2e6d42db1faf00ba4538ff9d9619be</sys_update_name>
+        <sys_updated_by>NMan</sys_updated_by>
+        <sys_updated_on>2019-01-30 21:09:13</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=4c2e6d42db1faf00ba4538ff9d9619be"/>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>onboarding_newedit</id>
+        <internal>false</internal>
+        <link/>
+        <name>onboarding_newedit</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>NMan</sys_created_by>
+        <sys_created_on>2019-01-30 21:12:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>41fea546db1faf00ba4538ff9d961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onboarding_newedit</sys_name>
+        <sys_package display_value="Onboarding Management System" source="x_shir_onboarding">4505d04edb1baf00ba4538ff9d9619b2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Onboarding Management System">4505d04edb1baf00ba4538ff9d9619b2</sys_scope>
+        <sys_update_name>sp_widget_41fea546db1faf00ba4538ff9d961968</sys_update_name>
+        <sys_updated_by>NMan</sys_updated_by>
+        <sys_updated_on>2019-01-30 21:12:50</sys_updated_on>
+        <template><![CDATA[<div><!-- your widget template --></div>]]></template>
+    </sp_widget>
+</record_update>
