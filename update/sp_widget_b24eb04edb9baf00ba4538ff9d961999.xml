@@ -22,12 +22,77 @@
 		}).then(function() {
 			c.data.Requests = shared.Requests;
 			c.server.update();
-		})
-		
-	}//function
+		})		
+	}//addNew
+	
+	
+	c.Edit = function(id){
+		shared.Requests = c.data.Requests;
+	
+		spModal.open({
+			title: 'Edit request',
+			widget: '41fea546db1faf00ba4538ff9d961968',
+			buttons: [
+				{label: 'Update', primary: true}
+			],
+			shared: shared
+		}).then(function() {
+			c.data.Requests = shared.Requests;
+			c.server.update();
+		})		
+	}//Edit	
+	
 }//function]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.myRequests
+{
+ 	margin: auto;
+	width: 100%;
+  padding: 1%;
+  text-align: center;
+  vertical-align: top;
+}
+.myHeader
+{
+  margin: auto;
+ 	width: 100%; 
+  font-size: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+.moreRoom
+{
+ 	width: 100%;
+  height: 50px;
+}
+.myFilters
+{
+ 	margin: auto;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+.myRows
+{
+  width: 100%;
+}
+table
+{
+ 	width: 100%; 
+  border: 1px solid black;
+}
+th, td {
+ 	padding: 30px; 
+  border: 1px solid black;
+}
+.myButtons
+{
+ 	width: 100%
+  height: 150px;
+  text-align: left;
+  vertical-align: top;
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -55,10 +120,11 @@
 	}
 	gs.info('isHR: ' + isHR);
 	
+	data.Requests = [];
 	var grRequests = new GlideRecord('x_shir_onboarding_requests');
 	grRequests.query();
 	if (grRequests.next()){
-		data.Requests = {
+		data.Requests.push ({
 			createdby: grRequests.sys_created_by.toString(),
 			createddatetime: grRequests.sys_created_on.toString(),
 			bu: grRequests.bu.toString(),
@@ -66,10 +132,11 @@
 			last_name: grRequests.last_name.toString(),
 			hiring_manager_name: grRequests.hiring_manager_name.toString(),
 			contract: grRequests.contract.toString(),
-			start_date: grRequests.contract.toString(),
+			start_date: grRequests.start_date.toString(),
+			end_date: grRequests.end_date.toString(),
 			status: grRequests.status.toString(),
-			id: sys_id()
-		}
+			id: grRequests.number.toString()
+		});
 	}
 	
 })();]]></script>
@@ -79,7 +146,7 @@
         <sys_created_on>2019-01-30 17:40:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b24eb04edb9baf00ba4538ff9d961999</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>onboarding</sys_name>
         <sys_package display_value="Onboarding Management System" source="x_shir_onboarding">4505d04edb1baf00ba4538ff9d9619b2</sys_package>
         <sys_policy/>
@@ -87,11 +154,61 @@
         <sys_scope display_value="Onboarding Management System">4505d04edb1baf00ba4538ff9d9619b2</sys_scope>
         <sys_update_name>sp_widget_b24eb04edb9baf00ba4538ff9d961999</sys_update_name>
         <sys_updated_by>NMan</sys_updated_by>
-        <sys_updated_on>2019-01-30 21:16:27</sys_updated_on>
-        <template><![CDATA[<div ng-if="!data.Requests">
-	<button ng-click="c.addNew('lg')" class="newRecord btn btn-primary">
-    ${New}
-  </button>
+        <sys_updated_on>2019-01-31 15:57:38</sys_updated_on>
+        <template><![CDATA[<div class = "myRequests">
+	<div class = "myHeader">
+    	Onboarding Management System
+  </div>
+  <div class = "moreRoom">
+    &nbsp;
+  </div>
+  <div class = "myFilters">
+    	Filters:
+  </div>
+  <div class = "myButtons">
+    <button ng-click="c.addNew('lg')" class="btn btn-primary">
+			Create New Request                                                            
+    </button>
+  </div>
+  <div class = "moreRoom">
+    &nbsp;
+  </div>
+  <div class = "myRows">
+    <table>
+      <tr>
+        <th>ID</th>
+      	<th>Created by</th>
+        <th>Created Date/Time</th>
+        <th>BU</th>
+        <th>Employee FName</th>
+        <th>Employee LName</th>
+        <th>Hiring Manager</th>
+        <th>Contract</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr ng-repeat="Request in c.data.Requests">
+        <td>{{Request.id}}</td>
+        <td>{{Request.createdby}}</td>
+        <td>{{Request.createddatetime}}</td>
+        <td>{{Request.bu}}</td>
+        <td>{{Request.first_name}}</td>
+        <td>{{Request.last_name}}</td>
+        <td>{{Request.hiring_manager_name}}</td>
+        <td>{{Request.contract}}</td>
+        <td>{{Request.start_date}}</td>
+        <td>{{Request.end_date}}</td>
+        <td>{{Request.status}}</td>
+        <td>
+        		<button ng-click="c.Edit('{{Request.id}}')" class="btn btn-primary">
+							Edit                                                            
+    				</button>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>]]></template>
     </sp_widget>
 </record_update>
